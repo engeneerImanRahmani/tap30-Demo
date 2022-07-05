@@ -1,16 +1,46 @@
 @font-face {
-	font-family: 'Yekan';
-	src:	url(/assets/fonts/Yekan.eot); /* IE9 Compat Modes */
-	src:	url(/assets/fonts/Yekan.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-			url(/assets/fonts/Yekan.woff2) format('woff2'), /* Modern Browsers */
-			url(/assets/fonts/Yekan.woff) format('woff'), /* Modern Browsers */
-			url(/assets/fonts/Yekan.otf) format('opentype'), /* Open Type Font */	
-			url(/assets/fonts/Yekan.ttf) format('truetype'); /* Safari, Android, iOS */
-	font-weight: normal;
+	font-family: "vazir";
+	font-weight: 400;
 	font-style: normal;
-	text-rendering: optimizeLegibility;
-	font-display: auto;
+	src: url("/tap30/assets/fonts/Vazir.woff") format("woff");
 }
-body, button{
-    font-family: 'Yekan';
+  
+@font-face {
+	font-family: "vazir";
+	font-weight: 700;
+	font-style: normal;
+	src: url("/tap30/assets/fonts/Vazir-Bold.woff") format("woff");
+}
+  
+body,
+button {
+	font-family: "vazir";
+}
+* {
+	-webkit-user-select: none;
+}
+  
+/*  PREVENT TEXT SIZE SCALLING */
+  
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+	html,
+	body,
+	p {
+	  text-size-adjust: none !important;
+	  -webkit-text-size-adjust: none !important;
+	  -moz-text-size-adjust: none !important;
+	  -ms-text-size-adjust: none !important;
+	}
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+	html,
+	body,
+	p {
+	  text-size-adjust: none !important;
+	  -webkit-text-size-adjust: none !important;
+	  -moz-text-size-adjust: none !important;
+	  -ms-text-size-adjust: none !important;
+	}
 }
