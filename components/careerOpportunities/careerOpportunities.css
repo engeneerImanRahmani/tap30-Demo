@@ -252,7 +252,10 @@ h2{
 }
 /* description section */
 .description.active {
-    opacity: 1;
+    display: flex;
+}
+.description.hidden {
+    display: none;
 }
 .description, .description-div {
     display: flex;
@@ -267,18 +270,17 @@ h2{
 .description-content {
     font-weight: bold;
     line-height: 2.5rem;
-    margin-bottom: 2rem;
 }
 .description-btn button{
     border: none;
     padding-bottom: 0.7rem;
     background-color: var(--color-white);
-    margin-left: 0.5rem;
+    margin-left: 1.2rem;
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
 }
-.border-btn {
+.description-btn .border-btn {
     border-bottom: 2px solid var(--color-headings);
 }
 /* MEDIA QUERY for description section */
@@ -302,8 +304,12 @@ h2{
         line-height: 4rem;
         margin-bottom: 4rem;
     }
+    .description-btn {
+        text-align: center;
+        margin-right: 27rem;
+    }
     .description-btn button{
         font-size: 1.3rem;
-        margin-left: 3rem;
+        margin-left: 4rem;
     }
 }
