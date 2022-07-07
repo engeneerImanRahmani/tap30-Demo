@@ -34,7 +34,7 @@ html{
 body{
     color: var(--color-body);
     font-size: 1.4rem ;
-    line-height: 2.2rem;
+    line-height: 2.5rem;
     font-family: "Vazir";
 }
 .block{
@@ -300,6 +300,7 @@ h2{
         margin-bottom: 3rem;
     }
     .description-content {
+        height: 160px;
         font-weight: normal;
         line-height: 4rem;
         margin-bottom: 4rem;
@@ -312,4 +313,71 @@ h2{
         font-size: 1.3rem;
         margin-left: 4rem;
     }
+}
+/* Review tapsi */
+.review-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.review-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-content {
+    border: 1px solid var(--color-secondry-dark);
+    box-shadow: 1px 1px 7px -2px #000000;
+    border-radius: 15px;
+    padding: 2rem;
+}
+.review-content.hidden {
+    display: none;
+}
+.review-content.active {
+    display: block;
+}
+.review-div {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.review-div img {
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 1rem;
+}
+.review-head {
+    font-size: 1.2rem;
+}
+.review-head :last-child {
+    opacity: 0.5;
+}
+.review-btn button{
+    outline: none;
+    border: none;
+    background-color: var(--color-white);
+    margin: 0 1.1rem;
+    cursor: pointer;
+}
+/* MEDIA QUERY for review */
+@media screen and (min-width: 1024px) {
+    .review-header {
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+    .review-head {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .review-div img {
+        width: 70px;
+    }
+    .review-content {
+        max-width: 800px;
+    }
+    .review-btn button {
+        font-size: 2.5rem;
+        margin: 0 3rem;
+        opacity: 0.7;
+    }
+
 }

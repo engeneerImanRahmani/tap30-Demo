@@ -9,8 +9,28 @@ buttons.forEach((element) => {
             description.classList.remove("active");
             description.classList.add("hidden");
             if (targetTabContent === description.id) {
-                description.classList.replace("hidden", "active")
+                description.classList.replace("hidden", "active");
             }  
         });
     })
 });
+
+const rightBtn = document.querySelector(".right-btn");
+const leftBtn = document.querySelector(".left-btn");
+const reviewContent = document.querySelectorAll(".review-content");
+let sum = 0;
+rightBtn.addEventListener("click", moveBtn);
+leftBtn.addEventListener("click", moveBtn);
+function moveBtn() {
+    sum = sum + 1;
+    reviewContent.forEach((element) => {
+        element.classList.remove("active");
+        element.classList.add("hidden");
+        if (sum > 2) {
+            sum = 0;
+        }
+        if (sum == element.attributes.value.textContent) {
+            element.classList.replace("hidden", "active");
+        }
+    })
+}
