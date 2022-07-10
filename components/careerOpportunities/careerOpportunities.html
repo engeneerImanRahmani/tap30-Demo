@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tap30 Demo</title>
     <link rel="stylesheet" href="./careerOpportunities.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -39,7 +40,7 @@
             <a href=""><button class="btn btn--primary">پیوستن به تپسی</button></a>
         </div>
     </section>
-    <section class="block">
+    <section class="block container" data-aos="zoom-in-down" data-aos-duration="1500">
         <div class="description active" id="tab-0">
             <img src="./assets/images/59e96feb.webp" alt="59e96feb" class="description-img"> 
             <div class="description-div">
@@ -77,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="block-two">
+    <section class="block-two container" data-aos="zoom-in-down" data-aos-duration="1500">
         <h2 class="review-header">تپسی از نگاه همکاران</h2>
         <div class="review-intro">
             <div class="review-btn right-btn"><button><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
@@ -114,7 +115,7 @@
             <div class="review-btn left-btn"><button><i class="fa fa-arrow-left" aria-hidden="true"></i></button></div>
         </div>
     </section>
-    <section class="block oppurtunities">
+    <section class="block oppurtunities container" data-aos="zoom-in-down" data-aos-duration="1500">
         <h2>فرصت های شغلی</h2>
         <p class="oppurtunities-head"><span>30</span>فرصت شغلی در <span>5</span>شهر ایران</p>
         <div class="oppurtunities-grid">
@@ -133,7 +134,7 @@
             <button class="btn btn--secondary">کارآموزی در تپسی</button>
         </div>
     </section>
-    <section class="feature-section block">
+    <section class="feature-section block container" data-aos="zoom-in-down" data-aos-duration="1500">
         <div class="feature-img">
             <img src="./assets/images/uni.webp" alt="uni">
         </div>
@@ -143,7 +144,7 @@
             <button class="btn btn--primary">ارتباط با تپسی</button>
         </div>
     </section>
-    <section class="sign_up block">
+    <section class="sign_up block container" data-aos="zoom-in-down" data-aos-duration="1500">
         <div class="sign_up-content">
             <h2>ثبت نام در آکادمی تپسی</h2>
             <p>ما به صورت دوره‌ای، رویدادهای آموزشی متنوعی را برگزار می‌کنیم، از سمینارها و کارگاه‌های تخصصی گرفته تا رویدادهای انتقال تجربه و اشتراک دانش. پس اگر مایلین در این رویدادها حضور داشته باشید، اینجا ثبت‌نام کنید و حوزه‌های مورد علاقه‌تان را برایمان بنویسید.</p>
@@ -214,7 +215,10 @@
             </div>
         </div>
     </footer>
-    
     <script src="./careerOpportunities.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

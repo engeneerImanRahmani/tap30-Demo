@@ -53,6 +53,10 @@ h2{
     font-size: 2.2rem;
     margin-bottom: 2rem;
 }
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 /* MEDIA QUERY for size heading*/
 @media screen and (min-width: 1024px) {
     body{
