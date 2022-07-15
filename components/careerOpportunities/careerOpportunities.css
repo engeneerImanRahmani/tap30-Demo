@@ -81,6 +81,7 @@ h2{
     border-radius: 8px;
     text-align: center;
     white-space: nowrap;
+    font-family: "Vazir";
     font-size: 1.4rem;
 }
 .btn--primary{
@@ -98,6 +99,7 @@ h2{
 }
 button {
     font-weight: bold;
+    font-family: "Vazir";
 }
 /* MEDIA QUERY for button */
 @media screen and (min-width: 1024px){
